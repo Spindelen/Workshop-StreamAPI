@@ -28,7 +28,9 @@ public class StreamExercise {
     @Test
     public void task1() {
         List<Integer> integers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-        integers.stream().forEach(integer -> System.out.println(integer));  //Using lambda
+        integers.stream()
+                .forEach(num -> System.out.println(num));
+                .forEach(num -> System.out.println(integer));  //Using lambda
     }
 
     /**
